@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_centerVertical="true">
-
+    android:layout_centerVertical="true"
+    android:orientation="vertical">
 
     <RelativeLayout
-        android:background="@color/purple_500"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize">
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/purple_500">
 
         <ImageView
             android:id="@+id/order_requer_back"
@@ -19,16 +17,16 @@
             android:layout_height="match_parent"
             android:layout_centerVertical="true"
             android:layout_marginStart="15dp"
-            android:src="@drawable/left"/>
+            android:src="@drawable/left" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:gravity="center"
             android:layout_marginStart="60sp"
+            android:gravity="center"
             android:text="Buyurtma bo'yicha talablar"
             android:textColor="@color/black"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
     </RelativeLayout>
 
     <ScrollView
@@ -37,45 +35,693 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
-
-            <View
-                android:layout_marginTop="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:background="#E4E4E4"/>
-
-            <TextView
-                android:layout_marginTop="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="10dpdsfd"
-                android:textColor="@color/black"
-                android:textSize="20sp"/>
 
             <RelativeLayout
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:id="@+id/txt_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@id/sc_settings"
+                    android:text="Narxlarning oshirilishi"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_title"
+                    android:layout_alignStart="@id/txt_title"
+                    android:layout_toStartOf="@id/sc_settings"
+                    android:text="Oshirilgan narx bajaruvchilarni ko'proq jalb qiladi va buyurtmaning shoshilinch ekanligini ko'rsatadi"
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/sc_settings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40sp"
+                        android:layout_marginStart="10dp"
+                        android:text="2 000 so'm"
+                        android:textAllCaps="false"
+                        android:textIsSelectable="true" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40sp"
+                        android:layout_marginStart="10dp"
+                        android:text="4 000 so'm"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40sp"
+                        android:layout_marginStart="10dp"
+                        android:text="6 000 so'm"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40sp"
+                        android:layout_marginStart="10dp"
+                        android:text="8 000 so'm"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40sp"
+                        android:layout_marginStart="10dp"
+                        android:text="10 000 so'm"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40sp"
+                        android:layout_marginStart="10dp"
+                        android:text="12 000 so'm"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40sp"
+                        android:layout_marginStart="10dp"
+                        android:text="14 000 so'm"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40sp"
+                        android:layout_marginStart="10dp"
+                        android:text="16 000 so'm"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40sp"
+                        android:layout_marginStart="10dp"
+                        android:text="18 000 so'm"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40sp"
+                        android:layout_marginStart="10dp"
+                        android:text="20 000 so'm"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40sp"
+                        android:layout_marginStart="10dp"
+                        android:text="22 000 so'm"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40sp"
+                        android:layout_marginStart="10dp"
+                        android:text="24 000 so'm"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40sp"
+                        android:layout_marginStart="10dp"
+                        android:text="26 000 so'm"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40sp"
+                        android:layout_marginStart="10dp"
+                        android:text="28 000 so'm"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40sp"
+                        android:layout_marginStart="10dp"
+                        android:text="30 000 so'm"
+                        android:textAllCaps="false" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:background="#E4E4E4" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:id="@+id/txt_title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/sc_settings2"
+                    android:text="7 yoshgacha bo'lgan bolalar bilan"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/sc_settings2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="40sp"
+                        android:layout_height="40sp"
+                        android:layout_marginStart="10dp"
+                        android:text="1"
+                        android:textIsSelectable="true" />
+
+                    <Button
+                        android:layout_width="40sp"
+                        android:layout_height="40sp"
+                        android:layout_marginStart="10dp"
+                        android:text="2" />
+
+                    <Button
+                        android:layout_width="40sp"
+                        android:layout_height="40sp"
+                        android:layout_marginStart="10dp"
+                        android:text="3" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:background="#E4E4E4" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:id="@+id/txt_title3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/sc_settings3"
+                    android:text="Yuk bilan"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txt_title3_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/sc_settings3"
+                    android:text="+ 2000 so'm"
+                    android:textSize="15sp" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/sc_settings3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#E4E4E4" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:id="@+id/txt_title4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@id/sc_settings4"
+                    android:text="Kattalashtirilgan yukxonali avto"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txt_title4_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@id/sc_settings4"
+                    android:text="+ 2000 so'm"
+                    android:textSize="15sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="buyurtma"
-                    android:textColor="@color/black"/>
+                    android:layout_below="@id/txt_title4"
+                    android:layout_alignStart="@id/txt_title4"
+                    android:layout_toStartOf="@id/sc_settings4"
+                    android:text="Qo'shimcha ma'lumotda nimani olib ketishni ko'rsating."
+                    android:textSize="12sp" />
 
-                <TextView
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/sc_settings4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="3000"/>
-
-                <Switch
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-
+                    android:layout_alignParentEnd="true" />
 
             </RelativeLayout>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#E4E4E4" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:id="@+id/txt_title5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/sc_settings5"
+                    android:text="Hayvon bilan"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txt_title5_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/sc_settings5"
+                    android:text="+ 3000 so'm"
+                    android:textSize="15sp" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/sc_settings5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#E4E4E4" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:id="@+id/txt_title6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@id/sc_settings6"
+                    android:text="Haydovchining yordami"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txt_title6_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@id/sc_settings6"
+                    android:text="+ 5000 so'm"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_title6"
+                    android:layout_alignStart="@id/txt_title6"
+                    android:layout_toStartOf="@id/sc_settings6"
+                    android:text="Haydovchi tashishdan boshqa xizmatlarni ham ko'rsatishi mumkin, masalan, buyumlarni olib borish."
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/sc_settings6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#E4E4E4" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:id="@+id/txt_title7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@id/sc_settings7"
+                    android:text="E'lon bilan kutib olish"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txt_title7_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@id/sc_settings7"
+                    android:text="+ 15000 so'm"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_title7"
+                    android:layout_alignStart="@id/txt_title7"
+                    android:layout_toStartOf="@id/sc_settings7"
+                    android:text="Qo'shimcha ma'lumot katagiga tablichka uchun familiyangizni ko'rsating."
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/sc_settings7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:background="#E4E4E4" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:id="@+id/txt_title8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/sc_settings8"
+                    android:text="Quyidagi summadan qaytim"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/sc_settings8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40sp"
+                        android:layout_marginStart="10dp"
+                        android:text="5 000 so'm"
+                        android:textAllCaps="false"
+                        android:textIsSelectable="true" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40sp"
+                        android:layout_marginStart="10dp"
+                        android:text="10 000 so'm"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40sp"
+                        android:layout_marginStart="10dp"
+                        android:text="50 000 so'm"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40sp"
+                        android:layout_marginStart="10dp"
+                        android:text="100 000 so'm"
+                        android:textAllCaps="false" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#E4E4E4" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:id="@+id/txt_title9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@id/sc_settings9"
+                    android:text="Choy puli"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_title9"
+                    android:layout_alignStart="@id/txt_title9"
+                    android:layout_toStartOf="@id/sc_settings9"
+                    android:text="Qiymat buyurtma narxiga qo'shiladi."
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/sc_settings9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40sp"
+                        android:layout_marginStart="10dp"
+                        android:text="6 000 so'm"
+                        android:textAllCaps="false"
+                        android:textIsSelectable="true" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40sp"
+                        android:layout_marginStart="10dp"
+                        android:text="7 000 so'm"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40sp"
+                        android:layout_marginStart="10dp"
+                        android:text="8 000 so'm"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40sp"
+                        android:layout_marginStart="10dp"
+                        android:text="9 000 so'm"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40sp"
+                        android:layout_marginStart="10dp"
+                        android:text="10 000 so'm"
+                        android:textAllCaps="false" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:background="#E4E4E4" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:id="@+id/txt_title10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="Yo'lovchilar soni"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/sc_settings10"
+                    android:layout_width="100sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center_horizontal"
+                    android:hint="0 ta"
+                    android:inputType="numberDecimal" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:background="#E4E4E4" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/sms" />
+
+                <EditText
+                    android:id="@+id/sc_settings11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="30sp"
+                    android:hint="Qo'shimcha ma'lumot"
+                    android:paddingStart="10dp" />
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15sp"
+                android:layout_marginTop="40sp"
+                android:text="tayyor"
+                android:textColor="@color/black" />
         </LinearLayout>
 
     </ScrollView>
